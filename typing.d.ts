@@ -8,18 +8,18 @@ type Article = {
   published_at: string;
   source: string;
   title: string;
-  url:string;
-}
-type Pagination ={
-count: Int;
-limit: Int 
-offset: Int 
-total: Int 
-}
-type NewsResponse={
-  pagination: Pagination;
+  url: string;
+};
+type Pagination = {
+  count: Int;
+  limit: Int;
+  offset: Int;
+  total: Int;
+};
+type NewsResponse = {
+  Pagination: Pagination;
   data: Article[];
-}
+};
 
 type Category =
   | "general"

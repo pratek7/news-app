@@ -1,15 +1,20 @@
-import React from "react";
 import { categories } from "../constants";
 import fetchNews from "../lib/fetchNews";
+import NewsList from "./NewsList";
+import response from "../response.json";
 
-async function page() {
+async function Homepage() {
   // fetch the news data
-  const news: NewsResponse = await fetchNews(categories.join(","))
+  const news: NewsResponse =
+    response || (await fetchNews(categories.join(",")));
+  //  Checkig wheather the data is coming or not through API
+  //  console.log(news);
 
-  return <div>
-    {/* NewsList news  */}
-
-  </div>;
+  return (
+    <div>
+      <NewsList news={news} />
+    </div>
+  );
 }
 
-export default page;
+export default Homepage;

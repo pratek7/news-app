@@ -1,9 +1,10 @@
-export default function Head() {
+function Head() {
   return (
     <>
       <title>News App</title>
-      <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     </>
   );
 }
+
+export default Head;

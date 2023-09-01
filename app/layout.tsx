@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Header from "./Header";
-import NavLinks from "./NavLink";
+import Providers from "./Providers";
+
 export default function RootLayout({
   children,
 }: {
@@ -8,11 +9,15 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head />
-      <body className="bg-gray-100 transition-all duration-700">
-        <Header />
-        <div className="max-w-6xl mx-auto">{children}</div>
-      </body>
+      <Providers>
+        <body className="bg-gray-100 transition-all dark:bg-zinc-900 duration-700">
+          <Header />
+          <div className="max-w-6xl mx-auto">{children}</div>
+          <footer className="text-center m-20 text-3xl font-extrabold animate-bounce">
+            &copy; Develop By: Pratik Karki, Developer
+          </footer>
+        </body>
+      </Providers>
     </html>
   );
 }
