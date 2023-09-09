@@ -15,9 +15,12 @@ function Header() {
         </Link>
         <div className="flex items-center justify-end space-x-2">
           <DarkModeButton />
-          <button className="hidden hover:bg-cyan-600 dark:hover:bg-slate-500 md:inline bg-slate-900 text-white px-4 lg:px-8 py-2 lg:py-4 rounded-full dark:bg-slate-800 ">
-            Suscribe Now
-          </button>
+          <div
+            onClick={() => window.open("https://github.com/pratek7/news-app")}
+            className=" cursor-pointer hidden hover:bg-cyan-600 dark:hover:bg-slate-500 md:inline bg-slate-900 text-white px-4 lg:px-8 py-2 lg:py-4 rounded-full dark:bg-slate-800 "
+          >
+            GitHub
+          </div>
         </div>
       </div>
       {/* Nav links  */}

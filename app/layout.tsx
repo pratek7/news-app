@@ -9,15 +9,17 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <Providers>
-        <body className="bg-gray-100 transition-all dark:bg-zinc-900 duration-700">
-          <Header />
-          <div className="max-w-6xl mx-auto">{children}</div>
-          <footer className="text-center m-20 text-3xl font-extrabold animate-bounce">
-            &copy; Develop By: Pratik Karki, Developer
-          </footer>
-        </body>
-      </Providers>
+      <body>
+        <Providers>
+          <div className="bg-gray-100 transition-all dark:bg-zinc-900 duration-700">
+            <Header />
+            <div className="max-w-6xl mx-auto">{children}</div>
+            <footer className="text-center m-20 text-3xl font-extrabold animate-bounce">
+              &copy; Develop By: Pratik Karki, Developer
+            </footer>
+          </div>
+        </Providers>
+      </body>
     </html>
   );
 }
