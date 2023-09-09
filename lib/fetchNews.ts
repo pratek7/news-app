@@ -46,7 +46,6 @@ const fetchNews = async (
     "https://tabira.stepzen.net/api/knotted-seagull/__graphql",
     {
       method: "POST",
-      cache: isDynamic ? "no-cache" : "default",
       next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
       headers: {
         "content-Type": "application/json",
@@ -77,3 +76,4 @@ const fetchNews = async (
 export default fetchNews;
 // stepzen import curl "http://api.mediastack.com/v1/news?access_key=7460d21afebd2755d1909cfe78a58fe4&sources=business,sports"
 // stepzen import curl "http://api.mediastack.com/v1/news?access_key=efe41cd0a3534189792d3a1379c4e204&countries=us%2Cgb,nep&limit=100&offset=0&sort=published_desc"
+// export const revalidate = 60;
