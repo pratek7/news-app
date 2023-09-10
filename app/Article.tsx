@@ -1,4 +1,3 @@
-import LiveTimeStamp from "./LiveTimeStamp";
 import ReadMoreButton from "./ReadMoreButton";
 
 type Props = {

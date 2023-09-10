@@ -1,12 +1,12 @@
 # Node.js
-node_modules/
-.next/
+node_modules
+.next
 
 # TypeScript
 *.tsbuildinfo
 
 # Editor-specific files
-.vscode/
+.vscode
 .idea/
 
 # OS-specific files
@@ -14,7 +14,7 @@ node_modules/
 Thumbs.db
 
 # Environment variables
-.env/
+.env
 .env.development.local
 .env.test.local
 .env.production.local
